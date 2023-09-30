@@ -15,7 +15,7 @@ jobs:
 
       - run: docker build -t alfalcon/multi-client ./client
       - run: docker build -t alfalcon/multi-nginx ./nginx
-      - run: docker build -t alfalcon/multi-server ./server
+      - run: docker build -t alfalcon/multi-server ./api
       - run: docker build -t alfalcon/multi-worker ./worker
 
       - run: docker push alfalcon/multi-client
